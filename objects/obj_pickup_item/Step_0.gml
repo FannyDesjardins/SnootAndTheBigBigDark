@@ -6,8 +6,34 @@
 	pickup = true		
 	}else{  pickup = false }
 	
-	if obj_player.action = true { instance_destroy() obj_hud.inv = self.give	}
-
+	if pickup = true {
+		if obj_player.action = true { 
+			var slotNumber=-1;
+			for(var i=0; i<INVENTORY_SLOTS; i++) {
+				if(obj_inventory.inventory[i]==0) {
+					if(self.give==1) {
+						instance_destroy()
+						obj_inventory.inventory[i]=self.give
+						obj_hud.logs_amount = obj_hud.logs_amount - 1
+						break;
+					} else if (self.give==2 && i <2) {
+						instance_destroy()
+						obj_inventory.inventory[i]=self.give
+						obj_inventory.inventory[i+1]=self.give
+						obj_hud.logs_amount = obj_hud.logs_amount - 1
+						break;
+					} else if(self.give==3 && i < 1) {
+						instance_destroy()
+						obj_inventory.inventory[i]=self.give
+						obj_inventory.inventory[i+1]=self.give
+						obj_inventory.inventory[i+3]=self.give
+						obj_hud.logs_amount = obj_hud.logs_amount - 1
+						break;
+					}
+				}
+			}
+		}
+	}
 switch(state) {
 	
     case "int": {

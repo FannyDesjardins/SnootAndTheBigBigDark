@@ -12,8 +12,8 @@ logs_amount = 0
 
 #region time 
 
-t_min = 4
-t_sec = 0
+t_min = 0
+t_sec = 60
 t_mil = 0 
 
 

@@ -9,7 +9,7 @@ img_dir = 0  // image direction
 
 hsp = 0
 vsp = 0 
-ply_speed = 1
+ply_speed = 8
 
 speedwalk = 1
 speedwalk_max = 1
