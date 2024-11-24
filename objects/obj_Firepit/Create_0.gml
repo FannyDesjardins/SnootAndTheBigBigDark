@@ -14,3 +14,5 @@ phase_ = 3
 
 fuel = 0;
 drop=false
+
+play_sfx = false

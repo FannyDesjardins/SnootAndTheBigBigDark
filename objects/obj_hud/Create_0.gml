@@ -6,7 +6,7 @@ time_ = 0
 spawn_log_ = false
 
 logs_amount = 0
-
+play_sfx = false
 
 
 

@@ -40,13 +40,15 @@ switch(state) {
 	
 	obj_hud.logs_amount = obj_hud.logs_amount + 1// each time a new log spawns, add too total in hud, only 5 at a time
 	state = choose("low","med","high")
-	
+	choose_sfx = choose(1,2)	
 	break;}
 	case "low":{	
 	
 	sprite_index = spr_log_
 	image_index = 2
 	give = 1
+	
+	
 	
 	break;}
 	case "med":{	

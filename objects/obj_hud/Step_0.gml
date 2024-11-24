@@ -28,5 +28,17 @@ if (spawn_log_ == true) {
 
 
 #endregion
+#region fire pit sound 
 
 
+if play_sfx = false {
+	
+audio_play_sound(sfx_fire_pit, 10, false);
+audio_play_sound(sfx_ambience_night_base, 10, false);
+
+play_sfx = true	
+
+
+}
+
+#endregion

@@ -13,6 +13,8 @@ ply_speed = 8
 
 speedwalk = 1
 speedwalk_max = 1
+
+dark_mode = false 
 	
 
 
