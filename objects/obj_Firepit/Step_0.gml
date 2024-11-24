@@ -1,4 +1,6 @@
-
+if(time_==0) {
+ obj_monster.animation_triggered = true;
+}
 
 // Fire pit animation
 if a >= 32 { a = 0; }
