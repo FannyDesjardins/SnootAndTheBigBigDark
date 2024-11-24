@@ -3,3 +3,4 @@
 #macro DOUBLE_SPACING 120
 #macro TRIPLE_SPACING 180
 inventory = array_create(INVENTORY_SLOTS, 0);
+dropped=false

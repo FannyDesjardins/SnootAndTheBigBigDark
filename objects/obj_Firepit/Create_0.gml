@@ -10,3 +10,7 @@ time_ = 50
 
 
 phase_ = 3
+
+
+fuel = 0;
+drop=false

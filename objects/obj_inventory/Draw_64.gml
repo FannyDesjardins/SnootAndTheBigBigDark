@@ -1,3 +1,4 @@
+
 draw_sprite_stretched(
     spr_inventory_empty,
     0,

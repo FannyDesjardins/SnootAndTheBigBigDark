@@ -3,7 +3,7 @@
 //fire place animation 
 	
 	if place_meeting(x,y,obj_player){
-	pickup = true		
+		pickup = true		
 	}else{  pickup = false }
 	
 	if pickup = true {
