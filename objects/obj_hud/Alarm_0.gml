@@ -13,6 +13,6 @@ if !(t_sec = 0 && t_min = 0 && t_mil = 0){
 alarm[0]= 6
 }else{
 	
-// do function 	
+room = Win_
 	
 }
