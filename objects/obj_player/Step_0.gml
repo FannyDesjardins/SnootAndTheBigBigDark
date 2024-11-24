@@ -7,7 +7,7 @@
 	if movment_disable = false {
 	
 	// input keystroke 
-	
+	action = keyboard_check(ord("E"));
 	
 	left = keyboard_check(ord("A")); // each variable is false, until pressed, which becomes true.
 	right = keyboard_check(ord("D")); 
@@ -28,7 +28,7 @@
 	dir_ = point_direction(0,0,hinput,vinput)
 	img_dir = point_direction(0,0,hinput,vinput)
 	
-	  sprite_index = spr_placeholder_player_walk  // put walking animation here
+	  sprite_index = spr_placeholder_player_walk_  // put walking animation here
 	
 	#region img controller
 		switch(dir_){
@@ -43,7 +43,7 @@
 	
 			}}else{  // put idle into here
 				
-			sprite_index = spr_placeholder_player_idle  // put ideal animation here
+			sprite_index = spr_placeholder_player_idle_  // put ideal animation here
 			  
 			if img_dir = 0   {if image_index >= 16 or image_index <= 0 {  image_index = 0 }}   // right
 			if img_dir = 45  {if image_index >= 16 or image_index <= 0 {  image_index = 0 }}    // upright
