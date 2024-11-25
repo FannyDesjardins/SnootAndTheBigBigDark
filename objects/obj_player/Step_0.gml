@@ -6,21 +6,26 @@
 	
 	if movment_disable = false {
 	
-	// input keystroke 
-	action = keyboard_check(ord("E"));
-	
-	left = keyboard_check(ord("A")); // each variable is false, until pressed, which becomes true.
-	right = keyboard_check(ord("D")); 
-	up = keyboard_check(ord("W")); 
-	down = keyboard_check(ord("S"));
+		// input keystroke 
+		action = keyboard_check(ord("E")) ;
+		left = keyboard_check(ord("A")) or keyboard_check(vk_left); // each variable is false, until pressed, which becomes true.
+		right = keyboard_check(ord("D")) or keyboard_check(vk_right); 
+		up = keyboard_check(ord("W")) or keyboard_check(vk_up); 
+		down = keyboard_check(ord("S")) or keyboard_check(vk_down);
 
-	inputDirection = point_direction(0,0,right-left,down-up);
-	inputMagnitude = (right - left != 0) || (down - up != 0);
+		inputDirection = point_direction(0,0,right-left,down-up);
+		inputMagnitude = (right - left != 0) || (down - up != 0);
 
-	PlayerStateFree()
+		PlayerStateFree()
 	
-	hinput = keyboard_check(ord("D")) - keyboard_check(ord("A")); 
-	vinput = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+		hinput = (keyboard_check(ord("D")) - keyboard_check(ord("A")))
+		if(hinput==0) {
+			hinput=keyboard_check(vk_right) - keyboard_check(vk_left);
+		}
+		vinput = (keyboard_check(ord("S")) - keyboard_check(ord("W")));
+		if(vinput==0) {
+			vinput = keyboard_check(vk_down) - keyboard_check(vk_up)
+		}
 
 	}
 	

@@ -10,3 +10,5 @@ play_audio_once = false
 
 
 choose_sfx = 0 
+
+depth=0
