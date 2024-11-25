@@ -76,3 +76,7 @@ play_sfx = false
 if (img_scale > 1) { 
     img_scale = 1; 
 }
+
+
+
+if obj_player.y <= y-100 {  depth = -1 }else{ depth = 0 }

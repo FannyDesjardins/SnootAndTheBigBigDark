@@ -13,7 +13,7 @@
 	
 	if spawn_button = true { 
 		
-	if instance_exists(obj_win_screen_restart){
+	if !instance_exists(obj_win_screen_restart){
 		
 	instance_create_layer(x,y,"Instance",obj_win_screen_restart)	
 	}
@@ -24,7 +24,7 @@
 	draw_img = true
 	
 	if play_sfx = false {
-	//audio_play_sound(     , 10, false);
+	audio_play_sound(sfx_win_screen, 10, false);
 	play_sfx = true	
 	}
 	/*	

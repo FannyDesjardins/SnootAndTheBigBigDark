@@ -16,6 +16,7 @@ speedwalk_max = 1
 
 dark_mode = false 
 	
+depth = 0
 
 
 hinput = 0  // detect horizontal movment 

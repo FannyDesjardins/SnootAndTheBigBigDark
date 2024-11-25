@@ -9,7 +9,6 @@ for (var i = 0; i < 15; i++) {
             if(leaves) {
                 instance_create_layer(xCoord, yCoord, "Instances", obj_tree1);
                 leaves = false;
-				show_debug_message("tree")
             } else {
                 instance_create_layer(xCoord, yCoord, "Instances", obj_tree2);
                 leaves = true;
